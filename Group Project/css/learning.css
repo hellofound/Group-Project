@@ -1,0 +1,601 @@
+@charset "utf-8";
+
+/* 
+	Title: Style Sheet for preperation page
+	Author: Jordan Kelsey
+	Date: December 3,2023
+	Fielname: learning.css
+	Purpose: Set style for learning web page
+
+*/
+
+html {
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    font-family: 'Merryweather Sans', sans-serif;
+    color: rgb(54, 48, 98);
+    background-color: rgb(245, 232, 199);
+}
+
+/* ----- header styles ------ */
+
+header.top-container {
+    position: relative;
+    width: 100%;
+}
+
+img#header-bg {
+    width: 100%;
+    height: 25em;
+    margin: auto;
+}
+
+h1#title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2.4em;
+    font-size: 5.4rem;
+    line-height: 2;
+    margin: 0 auto;
+}
+
+h2#sub-t {
+    position: absolute;
+    color: rgb(245, 232, 199);
+    font-family: 'Montserrat', sans-serif;
+    bottom: 2.7em;
+    left: 0;
+    right: 0;
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+/* ------ NAV bar styles ------ */
+
+nav#nav-bar {
+    font-size: 1.5em;
+}
+
+nav#nav-bar a {
+    margin: 1em 5em 1em 5em;
+}
+
+nav#menu {
+    display: none;
+}
+
+hr {
+    border-color: gray;
+    border-style: none;
+    border-top-style: dotted;
+    width: 4%;
+    border-width: 5px;
+    margin: 10px auto;
+}
+
+/* ------ Link styles ------ */
+
+a {
+    color: rgb(67, 85, 133);
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 178, 0);
+}
+
+/* ------- Intro Styles ------- */
+
+p#intro {
+    width: 40%;
+    margin: auto;
+}
+
+img.my-avatar {
+    width: 150px;
+}
+
+
+/* ------- page body/Image styels ------- */
+
+img#database-img {
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+    margin-right: 30px;
+}
+
+img#netw-img {
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+    margin-right: 30px;
+}
+
+img#laptop-img {
+    border-radius: 50%;
+    width: 20%;
+    float: right;
+    margin-left: 30px;
+}
+
+section.middle-container {
+    margin: 100px 0;
+}
+
+h3 {
+    color: rgb(67, 85, 133);
+    font-size: 150%;
+}
+
+p {
+    line-height: 2;
+}
+
+/* ------- Article styles for information ------- */
+
+h2#facts-title {
+    font-size: 180%;
+    margin-top: 2em;
+    color: rgb(67, 85, 133);
+}
+
+article.info {
+    width: 50%;
+    margin: 10em auto;
+    text-align: left;
+    line-height: 2;
+}
+
+a.img-att {
+    font-size: 0.2em;
+}
+
+a#osys-att {
+    text-align: right;
+}
+
+h3.class-info {
+    text-align: right;
+}
+
+p.class-info {
+    text-align: right;
+}
+
+/* ------- Table styles ------- */
+
+table.resources {
+	background: rgb(100, 149, 237);
+	border: .1em outset black;
+	border-collapse: collapse;
+	width: 48%;
+    height: 20em;
+    margin: 3em auto;
+    color: black;
+}
+
+table.resources td {
+	height: 3em;
+	text-align: center;
+}
+
+table.resources thead {
+	border: .1em solid black;
+	background: rgb(255, 178, 0);
+	height: 3em;
+}
+
+table.resources caption {
+	text-align: center;
+	font-size: 2em;
+    color: rgb(67, 85, 133);
+    margin-bottom: 1em;
+}
+
+table.resources th#quote {
+	background-color: rgb(255, 178, 0);
+}
+
+col#type {
+	background-color: rgb(255, 178, 0);
+	width: 10%;	
+}
+
+tr a {
+    margin: 0;
+    font-family: 'Merryweather Sans', sans-serif;
+    color: black;
+}
+
+tr a:hover {
+    color: white;
+}
+
+/* ------- Footer styles ------- */
+
+p#copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 1em 0;
+}
+
+a#btn {
+    background: rgb(100, 149, 237);
+    border-radius: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;;
+}
+
+a#btn:hover {
+    background: rgb(255, 178, 0);
+    text-decoration: none;
+}
+
+section#contact {
+    width: 40%;
+    margin: 40px auto 60px
+}
+
+h2#contact-title {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    color: rgb(67, 85, 133);
+}
+
+footer {
+    background-color: rgb(129, 143, 180);
+    padding: 50px 0 20px;
+}
+
+/* ==============================
+Mobile Styles: up to 600px
+===============================
+*/
+@media only screen and (max-width: 600px) {
+    h1#title {
+        bottom: 5em;
+        font-size: 0.8rem;
+    }
+    
+    h2#sub-t {
+        bottom: 5em;
+        font-size: 0.6rem;
+    }
+
+    img#header-bg {
+        height: 8em;
+    }
+
+    nav#nav-bar {
+        display: none;
+    }
+
+    nav#menu {
+        display: block;
+    }
+
+    nav#menu {
+        margin-left: 70%;
+    }
+
+    ul.submenu {
+        display: none;
+    }
+
+    button.subtitle:hover+ul.submenu, ul.submenu:hover {
+        display: block;
+        }
+        
+    ul.submenu a {
+        font-size: 0.6em;
+        position: absolute;
+        left: 60%;
+        color: rgb(67, 85, 133);
+    }
+
+    a#subhome {
+        bottom: 70%;
+    }
+
+    a#sublearn {
+        bottom: 66%;
+    }
+
+    a#subabout {
+        bottom: 62%;
+    }
+
+    a#subcontact {
+        bottom: 58%;
+    }
+
+    button.subtitle {
+        background: rgb(100, 149, 237);
+        border-radius: 0.5em;
+        color: #ffffff;
+        font-size: 0.5em;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+
+    button.subtitle:hover {
+        background-color: rgb(129, 143, 180);
+    }
+
+    p#intro {
+        width: 65%;
+    }
+
+    article.info {
+        width: 65%;
+    }
+
+    footer p#copyright {
+        font-size: 0.4em;
+    }
+
+    p#intro {
+        font-size: 0.5em;
+    }
+
+    img.my-avatar {
+        width: 50px;
+    }
+
+    p.class-text {
+        font-size: 0.5em;
+    }
+
+    h3.info-title {
+        font-size: 0.8em;
+    }
+    
+    h2#facts-title {
+        font-size: 0.8em;
+    }
+
+    table.resources {
+        width: 20%;
+        height: 7em;
+    }
+
+    table.resources td {
+        font-size: 0.8em;
+        height: 2em;
+    }
+    
+    table.resources thead {
+        height: 2em;
+        font-size: 0.8em;
+    }
+    
+    table.resources caption {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    table.resources th#quote {
+        background-color: rgb(67, 85, 133);
+        font-size: 0.8em;
+    }
+    
+    col#type {
+        background-color: rgb(67, 85, 133);
+        width: 8%;	
+        font-size: 0.8em;
+    }
+    
+    tr a {
+        margin: 0;
+        font-family: 'Merryweather Sans', sans-serif;
+        color: black;
+    }
+    
+    tr a:hover {
+        color: white;
+    }
+
+    a.footer-link {
+        font-size: 0.6em;
+    }
+
+    footer {
+        padding: 20px 0 18px;
+    }
+
+    h2#contact-title {
+        font-size: 0.8em;
+    }
+
+    a#btn {
+        font-size: 0.7em;
+        padding: 0.5em 0.8em;
+    }
+}
+/* ================================
+Tablet Styles: 481px to 768px
+================================
+*/
+
+
+@media only screen and (max-width: 767px) {
+    h1#title {
+        bottom: 5em;
+        font-size: 0.8rem;
+    }
+    
+    h2#sub-t {
+        bottom: 5em;
+        font-size: 0.6rem;
+    }
+
+    img#header-bg {
+        height: 8em;
+    }
+
+    nav#nav-bar {
+        display: none;
+    }
+
+    nav#menu {
+        display: block;
+    }
+
+    nav#menu {
+        margin-left: 70%;
+    }
+
+    ul.submenu {
+        display: none;
+    }
+
+    button.subtitle:hover+ul.submenu, ul.submenu:hover {
+        display: block;
+        }
+        
+    ul.submenu a {
+        font-size: 0.6em;
+        position: absolute;
+        left: 60%;
+        color: rgb(67, 85, 133);
+    }
+
+    a#subhome {
+        bottom: 70%;
+    }
+
+    a#sublearn {
+        bottom: 66%;
+    }
+
+    a#subabout {
+        bottom: 62%;
+    }
+
+    a#subcontact {
+        bottom: 58%;
+    }
+
+    button.subtitle {
+        background: rgb(100, 149, 237);
+        border-radius: 0.5em;
+        color: #ffffff;
+        font-size: 0.5em;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+
+    button.subtitle:hover {
+        background-color: rgb(129, 143, 180);
+    }
+
+    p#intro {
+        width: 65%;
+    }
+
+    article.info {
+        width: 65%;
+    }
+
+    footer p#copyright {
+        font-size: 0.4em;
+    }
+
+    p#intro {
+        font-size: 0.5em;
+    }
+
+    img.my-avatar {
+        width: 50px;
+    }
+
+    p.class-text {
+        font-size: 0.5em;
+    }
+
+    h3.info-title {
+        font-size: 0.8em;
+    }
+    
+    h2#facts-title {
+        font-size: 0.8em;
+    }
+
+    table.resources {
+        width: 20%;
+        height: 7em;
+    }
+
+    table.resources td {
+        font-size: 0.8em;
+        height: 2em;
+    }
+    
+    table.resources thead {
+        height: 2em;
+        font-size: 0.8em;
+    }
+    
+    table.resources caption {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    table.resources th#quote {
+        background-color: rgb(67, 85, 133);
+        font-size: 0.8em;
+    }
+    
+    col#type {
+        background-color: rgb(67, 85, 133);
+        width: 8%;	
+        font-size: 0.8em;
+    }
+    
+    tr a {
+        margin: 0;
+        font-family: 'Merryweather Sans', sans-serif;
+        color: black;
+    }
+    
+    tr a:hover {
+        color: white;
+    }
+
+    a.footer-link {
+        font-size: 0.6em;
+    }
+
+    footer {
+        padding: 20px 0 18px;
+    }
+
+    h2#contact-title {
+        font-size: 0.8em;
+    }
+
+    a#btn {
+        font-size: 0.7em;
+        padding: 0.5em 0.8em;
+    }
+}
+/* =================================
+Desktop Styles: 768px and up
+=================================
+*/
+
+@media only screen and (min-width: 768px) {
+
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- 
+        Title: WEBD Group project
+	    Author: Edited By Angeline
+	    Date: December 3, 2023
+	    Fielname: test.html
+	    Purpose: Template
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../Images/python_icon_team_webpage.png">
+    <title>Learning</title>
+</head>
+<body>
+    <header class="top-container">
+        <img id="header-bg" src="../Images/banner.jpg">
+        <h1 id="title">Contact Page</h1>
+        <h2 id="sub-t"></h2>
+    </header>
+    <nav id="nav-bar">
+        <a href="../index.html">Home</a>
+        <a href="../html/learning.html">Learn</a>
+        <a href="../html/about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="middle-container">
+        <article>
+		<img id="Angela" src="../Images/avatars/angela.png">
+		<p id="Angela">When not crafting lines of code you'll find me exploring the ever-evolving landscape of web design, transforming concepts into captivating visual realities. Dive into our contacts page and witness the magic firsthand!<br />angieo@gmail.com</p>		
+        </article>
+        <hr>   
+
+        <section id="flexbox">
+			
+
+<article class="Groupmem">
+    <img id="Jordan" src="../Images/avatars/jordan.png">
+    <p id="Jordspar">A certified HTML & CSS guru with an impeccable sense of design. With an eye for detail and a heart for collaboration, Jordan brings a wealth of expertise to the table. <br />jordank@gmail.com</p>
+    
+</article>
+
+<article class="Groupmem">
+    <img id="Aidan" src="../Images/avatars/aidan.png">
+    <p id="Aidan">A true tech aficionado, always at the forefront of innovation. Passionate about exploring the latest gadgets and embracing cutting-edge technology!<br />aidan@gmail.com</p>
+    
+</article>
+
+<article class="Groupmem">
+    <img id="Michael" src="../Images/avatars/michael.png">
+    <p id="Michael">Meet our creative design specialist who played a pivotal role in elevating our website's aesthetics and user experience through compelling testimonials.<br />koppmichael@gmail.com</p>
+    
+</article>
+
+<article class="Groupmem">
+    <img id="Evan" src="../Images/avatars/Evan's.webp">
+    <p id="Evan">Coding maestro proficient in both Python and Java. His dedication to creating seamless user experiences and bridging the gap between backend and frontend technologies makes them a valuable asset to our team.<br />evanv@gmail.com</p>
+    
+</article>
+        </section>
+
+        <hr>
+
+       <section>
+<h1>Student Feedback</h1>
+<p>Required fields are marked by an asterisk (*)</p>
+<form id="StudentInfo" summary="To practice forms" action="FormProcessor.html" method="get">
+    <fieldset id="StudentInfo">
+        <legend>Student Information</legend>
+        <label for="firstName">First Name*</label>
+        <input name="firstName" id="firstName" type="text" required />
+        
+        <label for="lastName">Last Name*</label>
+        <input name="lastName" id="lastName" type="text" required /> <br />
+       
+	   
+        <!-- TEL type with placeholder and pattern format  -->
+        <label for="phoneNumber">Phone Number</label>
+        <input name="phoneNumber" id="phoneNumber" type="tel" value="(nnn)nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+        
+        <!-- EMAIL type with placeholder and pattern format -->
+        <label for="email">Email*</label>
+        <input name="email" id="email" type="email" required />
+        
+       </fieldset>
+</form>
+    
+    <!-- listbox with multiselect -->
+<form id="demo" summary="To practice forms" action="FormProcessor.html" method="get">
+    <br />
+    <label for="info">Where did you hear about us?<br />(select all that apply)</label>
+    <select name="infoSrc" id="info" size="5" multiple>
+        <optgroup label="NSCC">
+            <option value="internet">NSCC Website</option>
+            <option value="Instructor">Sharla Rolfe-Hunter</option>
+        </optgroup>
+        <optgroup label="Other">
+            <option value="word">Word of Mouth</option>
+          
+        </optgroup>
+    </select>
+    
+    <!-- input to the datalist -->
+    <br />
+    <label for="cogs">What program are you taking?</label> <br />
+    <input name="program" id="cogs" type="text" list="techprograms" />
+    <datalist id="techprograms">
+        <option value="Forest Geomatics">
+        <option value="Geographic Information Systems">
+        <option value="Remote Sensing">
+        <option value="GIS Technician">
+        <option value="Geomatics Engineering">
+        <option value="IT Programming">
+        <option value="Marine Geomatics">
+        <option value="Survey Technician">
+    </datalist>
+    <br />
+	
+    <label for="favcourse">Select your favorite course</label> 
+	<select name="course" id="favCourse" >
+	    <option value="Course1">Database</option>
+        <option value="Course2">Web Development</option>
+        <option value="Course3">Operating Systems</option>
+        <option value="Course4">Programming</option>
+        <option value="Course5">Networking</option>
+	</select>
+	<br />	
+    <label>Do you want to be added to our mailing list?</label> 
+	<fieldset>
+	    <label for="hYes">Yes</label>
+	    <input name="helpful" id="hYes" value="yes" type="radio" />
+	 
+	    <label for="hNo">No</label>
+	    <input name="helpful" id="hNo" value="no" type="radio" />
+	</fieldset>	
+	
+	<input name="updates" id="updates" value="yes" type="checkbox" />
+	<label for="updates">Add me to your mailing list for program updates!</label>
+	
+	
+	<br />
+	<label for="exp">Rate your overall Programming Experience</label>
+	0
+	<input name="cogsRate" id="rateCOGS" type="range" value="5" step="1" min="0" max="10">
+	10 
+	  
+	<br />
+	<label for="devices">How many computers/laptops/phones do you have</label>
+	<input name="devices" id="devices" type="number" value="0" step="1" min="0" max="20" />
+	<br />
+		 
+	<label for="enrolled">Date you enrolled in the program?</label>
+	<input name="enrollDate" id="enrolled" type="date" />
+	<fieldset>
+		<legend>Tell us what you think about the website </legend>
+	    <textarea name="stuComm" id="comment" rows="2" cols="20" ></textarea>
+	</fieldset>
+	
+	
+	
+	
+	
+	
+	<input type="submit" value="Submit" />
+	<input type="reset" value="Cancel" />
+</form>
+</section>
+    </section>
+
+    <footer>
+        <a class="footer-link" href="#">LinkedIn</a>
+        <a class="footer-link" href="#">Twitter</a>
+        <a class="footer-link" href="#">Website</a>
+        <p id="copyright">© Angeline 2023.</p>
+    </footer>
+
+</body>
+</html>

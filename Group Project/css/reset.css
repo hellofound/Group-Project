@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 
+	Title: Reset Style Sheet for WEBD Group Projects
+	Author: Jordan Kelsey
+	Date: December 3,2023
+	Fielname: reset.css
+	Purpose: To reset browser default styles for group project
+
+*/
+
+
+article, aside, footer, header, main, nav, section {
+   display: block;
+}
+
+address, article, aside, body, div, footer, h1, h2, h3 h4, h5, h6, header, html, img, li, ul, ol, main, nav, p, section {
+   font-size: 100%;
+   padding: 0;
+   /* Avoid overflow */
+   overflow-wrap: break-word;
+   font-weight: normal;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    margin: 0;
+}
+

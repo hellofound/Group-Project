@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/print.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<style>
+/*flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+    height: auto;
+}
+
+/* Left and right column */
+.column.side {
+    flex: 1;
+}
+/* break column */
+.column.break {
+    background-color: #31304D;
+    color: white;
+    border-style: solid;
+    flex: 1;
+}
+.column.part {
+    height: 1px;
+    background-color: #435585;
+}
+/* Middle column */
+.column.middle {
+    flex: 2;
+}
+
+/*footer  Style*/
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+.bottom-container{
+    Text-align: center;
+    background-color: #818FB4;
+    padding: 50px 0 20px;
+}
+a {
+color: white;
+font-family: 'Montserrat', sans-serif;
+margin: 10px 20px;
+text-decoration: none;
+}
+a:hover {
+color: white;
+}
+.copyright{
+color: #EAF6F6;
+font-size: 0.75rem;
+padding: 20px 0;
+}
+
+/*collapsable device section*/
+.collapsible {
+    background-color: #9DB2BF;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    
+    background-color: #27374D;
+    color: white;
+}
+.collapsible:after {
+    content: '\002B';
+    color: F5E8C7;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.content {
+    padding: 0 2em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #526D82;
+}
+</style>
+</head>
+<body>
+
+<aside class="header"><!--Header-->
+    <h1>IT Programming</h1>
+</aside>
+<nav class="navbar"><!--Dropdown-->
+    <aside  class="dropdown">
+        <button class="dropbtn">Homepage</button>
+        <div class="drop-home">
+            <a href="#career">Future Careers</a>
+            <a href="#map">Image Map</a>
+            <a href="#devreq">Device Requirements</a>
+            
+    </aside>
+        <a id="item" href="html/learning.html">Learning</a>
+        <a id="item" href="html/about.html">About</a>
+        <a id="item" href="html/contact.html">Contact Us</a>
+</nav>
+<aside class="row"><!--Overview-->
+    <nav class="column side">
+        <nav class="column break">
+            <h2 style="text-align: center;">Work Experience</h2>
+        </nav>
+        <p>
+            Field experience is a mandatory credit course, providing you with the opportunity to apply your knowledge and skills outside of the classroom.
+            Opportunities are typically unpaid and last approximately 5 weeks.</p>
+            <p>
+                This program is eligible for an optional cooperative education (co-op) credit course between year one and two.
+            </p>
+            <ul>
+                <li>Co-op provides an opportunity for paid, full-time employment in a field related to your program.</li>
+                <li>Co-op takes place in third term and must be a minimum of 12 weeks and 420 hours.</li>
+                <li>Our co-op program follows Co-operative Education and Work-Integrated Learning Canada (CEWIL) guidelines.</li>
+                <li>Transportation, accommodations and other costs related to work experience are your responsibility..</li>
+            </ul>
+            <p id="temp" style="font-weight: bolder;">
+                For more information, visit:<a href="https://www.nscc.ca/study-at-nscc/learning-experience/hands-on-learning/work-experience/index.asp">HERE
+            </p></a>
+        </p> 
+    </nav>
+    <nav class="column middle">
+        <nav class="column break">
+            <h2 style="text-align: center;">Overview From NSCC</h2>
+        </nav>
+            <p>
+                If you are interested in understanding how computers work, have an interest in application development and programming, and a drive to create things that others will use, IT Programming is for you.
+            </p>
+            <p>
+                You benefit from faculty who bring years of industry experience to the classroom. Courses are designed to give you a well-rounded experience that parallels industry workplaces. You gain practical experience and apply your skills during work terms.
+            </p>
+            <p>
+                In this program, you learn to create software solutions, write effective code and follow best practice coding and design standards. Throughout your studies, you work as part of a multi-disciplinary team as well as independently. You'll also learn to liaise with clients who have non-technical backgrounds.
+            </p>
+    </nav>
+    <nav class="column side">
+        <nav class="column break">
+            <h2 style="text-align: center;">Choose NSCC</h2>
+        </nav>
+        <p>
+            You benefit from faculty who bring years of industry experience to the classroom.
+            Courses are designed to give you a well-rounded experience that parallels industry workplaces.
+            You gain practical experience and apply your skills during work terms.
+        </p>
+    </nav>
+</aside>
+<nav class="column part">
+    <h2 style="text-align: center;"></h2>
+</nav>
+<aside class="row"> <!--Future Careers-->
+    <nav class="column side">
+        <nav class="column break">
+            <h2 style="text-align: center;">Potential Future Careers</h2>
+        </nav>
+        <ul id="carlist">
+                <li>Mobile Application Developer</li>
+                <li>Web Developer</li>
+                <li>Back-end Developer</li>
+                <li>Game Developer</li>
+                <li>Desktop Application Developer (Windows)</li>
+                <li>Systems Developer</li>
+                <li>Software tester</li>
+                <li>Quality control specialist</li>
+        </ul>
+        
+    </nav>
+</aside>
+<nav class="column part">
+    <h2 style="text-align: center;"></h2>
+</nav>
+<aside class="row"> <!--IMAGE MAP-->
+    <nav class="column middle" style="background-image: url(Images/bg.jpg);">
+        <article id="map" style="text-align: center;">
+            <h2 style="text-align: center; color: white; text-shadow: 2px 1px 5px  red;">BUY NOW! CLICK BELOW</h2>
+            <img src="Images/imagemap1.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="" alt="Apple" title="Apple" href="https://www.apple.com/ca/macbook-pro/" coords="274,166,358,251" shape="rect">
+                <area target="" alt="Dell" title="Dell" href="https://www.dell.com/en-ca/shop/deals/pc-laptop-deals?gacd=9683519-3047-5761040-266312346-0&amp;dgc=st&amp;SA360CID=71700000108664840&amp;gad_source=1&amp;gclid=CjwKCAiA1MCrBhAoEiwAC2d64W5aPC96_hVTNnsKV3b1jn0nU4gN-1naI4ZkfYdgbxbN0nJh0yEjbBoCSmYQAvD_BwE&amp;gclsrc=aw.ds" coords="187,203,43" shape="circle">
+            </map>
+        </article>
+    </map>
+    </nav>
+</aside>
+<nav class="column part">
+    <h2 style="text-align: center;"></h2>
+</nav>
+<aside class="row"><!--Chaos-->
+    <nav class="column side">
+        <nav class="column break">
+            <h2 style="text-align:center;" id="devreq">Device Requirements</h2>
+        </nav>
+        <h3>Disclaimer!</h3>
+        <h4>Due to a lack of compatibility with required software, we do not recommend you use:</h4>
+        <ul>
+            <li>Chromebooks</li>
+            <li>Macintosh computers (except for specific programs)</li>
+            <li>If you already have a Mac Too bad!</li>
+        </ul>
+    </nav>
+        <nav class="column middle">
+            <button class="collapsible">Windows Desktop/Laptop</button>
+            <div class="content">
+                <h3>
+                    Budget computer - Cost is approximately $650
+                </h3>
+                    <ul>
+                        <li>Windows 10</li>
+                        <li>i5 Processor</li>
+                        <li>256 SSD</li>
+                        <li>8 GB RAM</li>
+                        <li>Integrated graphics</li>
+                    </ul>
+                <h3 id="desk">
+                    Mid-range computer - Cost is approximately $1,200
+                </h3>
+                    <ul>
+                        <li>Windows 10</li>
+                        <li>i5 Processor</li>
+                        <li>256 SSD</li>
+                        <li>16 GB RAM</li>
+                        <li>Integrated graphics</li>
+                    </ul>
+                <h3 id="desk">
+                    Performance computer - Cost is approximately $2,000
+                </h3>
+                    <ul>
+                        <li>Windows 10</li>
+                        <li>i7 Processor</li>
+                        <li>512 SSD</li>
+                        <li>16 GB RAM</li>
+                        <li>Integrated or discrete graphics</li>
+                    </ul>
+                <h3 id="desk">
+                    High-performance computers (see 2 options below)</p>
+                    <p>Option 1 - High performance workstation computer - Cost is approximately $3,000 and up
+                </h3>
+                    <ul>
+                        <li>Windows 10</li>
+                        <li>Intel i7/i9 Processor OR AMD Ryzen 4000/5000 series</li>
+                        <li>512 SSD</li>
+                        <li>32 GB RAM</li>
+                        <li>NVIDIA Quadro T2000 w/min 4GB GDDR6</li>
+                    </ul>
+                <h3>
+                    Option 2 - High Performance Gaming Computer - Cost is approximately $3000 and up
+                </h3>
+                    <ul>
+                        <li>Windows 10</li>
+                        <li>Intel i7/i9 Processor OR AMD Ryzen 4000/5000 series</li>
+                        <li>512 SSD</li>
+                        <li>32 GB RAM</li>
+                        <li>NVIDIA RTX 2000 series or better w/min 4GB GDDR6, or equivalent</li>
+                    </ul>
+            </div>
+                <button class="collapsible">Macintosh computers</button>
+            <div class="content">
+                <h3>
+                    Budget MacBook - Cost is approximately $1,599
+                </h3>
+                    <ul>
+                        <li>Apple M3 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine</li>
+                        <li>8GB unified memory</li>
+                        <li>512GB SSD storage</li>
+                        <li>14-inch Liquid Retina XDR display²</li>
+                        <li>70W USB-C Power Adapter</li>
+                        <li>Two Thunderbolt / USB 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port</li>
+                        <li>Backlit Magic Keyboard with Touch ID - US English</li>
+                    </ul>
+                <h3>
+                    Mid-range MacBook Pro - Cost is approximately $2,600 (Space Black)
+                </h3>
+                    <ul>
+                        <li>Apple M3 Pro chip with 12‑core CPU, 18‑core GPU, 16‑core Neural Engine</li>
+                        <li>18GB unified memoryy</li>
+                        <li>1TB SSD storage</li>
+                        <li>16-inch Liquid Retina XDR display²</li>
+                        <li>140W USB-C Power Adapter</li>
+                        <li>Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port</li>
+                        <li>Backlit Magic Keyboard with Touch ID - US English</li>
+                    </ul>
+                <h3>
+                    High-performance MacBook Pro - Cost is approximately $3,200(Space Black)
+                </h3>
+                    <ul>
+                        <li>Apple M3 Max chip with 16‑core CPU, 40‑core GPU, 16‑core Neural Engine</li>
+                        <li>48GB unified memory
+                        </li>
+                        <li>1TB SSD storage</li>
+                        <li>16-inch Liquid Retina XDR display²</li>
+                        <li>140W USB-C Power Adapter</li>
+                        <li>Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port</li>
+                        <li>Backlit Magic Keyboard with Touch ID - US English</li>
+                    </ul>
+            </div>
+                <button class="collapsible">Somewhat required Tech Stuff</button>
+            <div class="content">
+                <h3>
+                    The following is a list of things that would be usefull to have during the IT Programming program.
+                </h3>
+                    <ul>
+                        <li>USB Drive minimum 32GB<-Required</li>
+                        <li>Headset</li>
+                        <li>Mouse<-Required if you don't hate yourself</li>
+                        <li>Second Computer Monitor<-makes life easier</li>
+                    </ul>
+            </div>
+        </nav>
+    </aside>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        } 
+        });
+    }
+</script>
+<nav class="column part">
+    <h2 style="text-align: center;"></h2>
+</nav>
+<footer class="bottom-container">
+    <a class="footer-link" href="#">LinkedIn</a>
+    <a class="footer-link" href="#">Twitter</a>
+    <a class="footer-link" href="#">Website</a>
+    <p class="copyright">© 2023 GROUP.</p>
+</footer>
+</body>
+</html>
+
+
